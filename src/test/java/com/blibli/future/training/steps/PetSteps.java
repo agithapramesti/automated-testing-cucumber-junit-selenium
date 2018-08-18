@@ -39,7 +39,9 @@ public class PetSteps {
     @And("^add pet response data pet name should be \"([^\"]*)\"$")
     public void addPetResponseDataPetNameShouldBe(String petName) throws Throwable {
 
-
+        Response response = petController.getResponseAddPet();
+        String resultPetName = response.path("name");
+        assertThat("Pet Name Not Same", resultPetName, equalTo(petName));
     }
 
 }
