@@ -48,4 +48,10 @@ public class QuoteSteps {
 
 
     }
+
+    @Then("^User should see quote \"([^\"]*)\"$")
+    public void userShouldSeeQuote(String quote) throws Throwable {
+
+        gegeSteps.shouldSeeQuote(quote);
+    }
 }

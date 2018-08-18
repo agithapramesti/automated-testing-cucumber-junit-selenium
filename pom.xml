@@ -82,6 +82,7 @@
                     </includes>
                     <argLine>-Xmx512m</argLine>
                     <systemPropertyVariables>
+                        <cucumber.options>--junit,--step-notifications</cucumber.options>
                         <webdriver.driver>${webdriver.driver}</webdriver.driver>
                     </systemPropertyVariables>
                 </configuration>
