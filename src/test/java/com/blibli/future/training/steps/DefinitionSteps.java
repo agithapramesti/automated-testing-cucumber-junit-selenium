@@ -28,5 +28,5 @@ public class DefinitionSteps {
     public void thenTheyShouldSeeADefinitionContainingTheWords(String definition) {
         anna.should_see_definition(definition);
     }
-
 }
+
